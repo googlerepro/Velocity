@@ -5,7 +5,7 @@
   "scripts": {
     "installwebpack": "echo 'Installing webpack' && npm install -D webpack-cli && echo 'Done :)",
     "dev": "concurrently \"webpack --mode development --watch\" \"solid-start dev --host\" \"bare-server-node --host=localhost --port=8080\"",
-    "build": "npm run installwebpack && webpack --mode production && solid-start build"
+    "build": "npm run installwebpack && webpack --mode production && solid-start build",
     "start": "node scripts/server.js",
     "stat": "webpack --profile",
     "pretty": "prettier --write ."
